@@ -1,7 +1,7 @@
 <h1><%= @restaurant.name %></h1>
 <h3>Cuisine: <%= @restaurant.cuisine %></h3>
 
-<div><img src="<%= @restaurant.picture_url %>"></div>
+<div class="container"><img src="<%= @restaurant.picture_url %>"></div>
 
 	<p><%= @restaurant.address %></br>	
 	Phone: <%= @restaurant.phone %></br>				
@@ -9,4 +9,4 @@
 
 <p>Review(s):</br>
 <%= @restaurant.review %></p>
-
+<p>Rating: <%= @restaurant.rating %> out of 5</p>

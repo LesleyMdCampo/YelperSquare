@@ -4,4 +4,8 @@ class Restaurant < ActiveRecord::Base
 		self.review.truncate(30)
 	end
 
+	def rating
+		rand(1..5)
+	end
+
 end

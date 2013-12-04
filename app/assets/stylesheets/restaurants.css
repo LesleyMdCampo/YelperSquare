@@ -11,8 +11,14 @@ h1 a {
 	color: #17607D;
 }
 
+.subtitle-index {
+	color: #17607D;
+}
+
 /*Body
 ===============================================*/
+
+
 table {
 	margin: 10px 0px 20px 0px;
 }
@@ -60,7 +66,7 @@ footer {
 /*Images
 ===============================================*/
 .container {
-    width: 600px;
+    width: 300px;
     height: auto;
 }
 
