@@ -1,7 +1,7 @@
 class Restaurant < ActiveRecord::Base
 
 	def snippet
-		self.review.truncate(30)
+		self.review.truncate(40)
 	end
 
 end
