@@ -1,1 +1,12 @@
-<p>This is a single page view.</p>
+<h1><%= @restaurant.name %></h1>
+<h3>Cuisine: <%= @restaurant.cuisine %></h3>
+
+<div><img src="<%= @restaurant.picture_url %>"></div>
+
+	<p><%= @restaurant.address %></br>	
+	Phone: <%= @restaurant.phone %></br>				
+	Hours: <%= @restaurant.hours %></p>	
+
+<p>Review(s):</br>
+<%= @restaurant.review %></p>
+

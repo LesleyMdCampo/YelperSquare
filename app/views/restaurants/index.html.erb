@@ -1,1 +1,39 @@
-<h1>Home Page</h1>
+<table>
+	<thead>
+		<th></th>
+		<th>Restaurant</th>
+		<th>Cuisine</th>
+		<th>Address</th>
+		<th>Phone</th>
+		<th>Hours</th>
+		<th>Review</th>
+		<th class="last-column"></th>
+	</thead>
+
+	<tbody>
+		<tr><% @restaurants.each do |restaurant| %>
+			<td class="first-column"><img class="thumbnail" src="<%= restaurant.picture_url %>"></td>
+			<td><%= restaurant.name %></td>
+			<td><%= restaurant.cuisine %></td>
+			<td><%= restaurant.address %></td>
+			<td><%= restaurant.phone %></td>
+			<td><%= restaurant.hours %></td>
+			<td><%= restaurant.snippet %></td>
+			<td class="last-column"><%= link_to 'View', restaurant %></td>
+			<% end %>
+		</tr>	
+	</tbody>
+</table>
+
+<button><%= link_to 'Add New Restaurant', new_restaurant_path %></button>
+	<% @restaurants.each do |restaurant| %>
+		<button><%= link_to 'Edit', edit_restaurant_path(restaurant) %></button>
+		<button><%= link_to 'Remove', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+	<% end %>
+		
+
+
+
+
+
+

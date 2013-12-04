@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/*Typography
+===============================================*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #FFF1CE;
+}
+
+h1 a {
+	color: #17607D;
+}
+
+/*Body
+===============================================*/
+table {
+	margin: 10px 0px 20px 0px;
+}
+
+th {
+	border-bottom: 1px solid gray;
+}
+
+th, td {
+	border-right: 1px solid gray;
+	padding: 5px;
+}
+
+.th-center {
+	text-align: left;
+}
+
+.last-column {
+	border-right: none;
+}
+
+.last-column a {
+	text-decoration: underline;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.new-button {
+	margin-top: 30px;
+}
+
+/*Nav
+===============================================*/
+
+/*Footer
+===============================================*/
+footer {
+	position: absolute;
+	bottom: 0px;
+}
+
+/*Images
+===============================================*/
+.container {
+    width: 600px;
+    height: auto;
+}
+
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.thumbnail {
+	width: 75px;
+	height: auto;
+}
+
