@@ -1,6 +1,6 @@
 YelperSquare::Application.routes.draw do
 
-  root '/restaurants#index'
+  root 'restaurants#index'
   resources :restaurants
 
 end
